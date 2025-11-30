@@ -1,7 +1,10 @@
+Projeto Integrador: Monitoramento Elétrico em Python
+Este projeto implementa um sistema de monitoramento e análise elétrica de circuitos desenvolvido em Python. O objetivo é garantir a segurança operacional e estimar o custo energético de uma instalação, gerenciando circuitos e suas medições.
+
 Lógica e Estruturas de Dados
 O sistema utiliza estruturas de dados fundamentais para gerenciar informações elétricas e regras de segurança:
 
-Lista de Listas (circuitos): Armazena todos os dados medidos de cada circuito (Nome, Tipo, Tensão, Corrente, Fator de Potência, etc.).
+Lista de Listas (circuitos): Armazena todos os dados medidos de cada circuito (Tensão, Corrente, Fator de Potência, etc.).
 
 Dicionário (limites): Define as regras de conformidade e os limites máximos e mínimos para cada tipo de carga (motor, iluminação, etc.).
 
@@ -25,21 +28,22 @@ Energia Consumida (E em kWh): E = P (kW) * Tempo (h)
 
 Custo Diário (R$): Custo = E (kWh) * Tarifa (R$/kWh)
 
-Menu e Relatórios
+Menu e Funcionalidades
 O programa é operado por um menu de console intuitivo.
 
-Opção 1 e 2: Gerencia as entradas de dados e atualiza as medições elétricas.
+Opção 1 e 2: Gerencia as entradas de dados e atualiza as medições elétricas. A função registrar_medicao aceita valores vazios para manter o dado atual.
 
-Opção 3 (Análise Completa): Executa a análise de conformidade e o Módulo Extra de Consumo.
-
-Opção 5 (Salvar e Relatório): Cumpre o requisito de manipulação de Arquivos, salvando dados no circuitos.txt e gerando o relatorio_nao_conforme.txt com a lista dos circuitos com problemas.
+Opção 3 (Executar Análise): Executa a análise de conformidade, mostra o resumo geral e o Módulo Extra de Consumo.
 
 Equipe e Tecnologia
 Este projeto foi desenvolvido por:
 
 João Gustavo Rodrigues de Almeida
+
 Leonardo Pasturchak de Paula
+
 Luis Gabriel Pereira de Barros
+
 Pedro de Sousa Alves
 
-Tecnologias: Python 3.x, Listas de Listas, Dicionários, Manipulação de Arquivos.
+Tecnologias: Python 3.x, Listas de Listas, Dicionários, Strings.
